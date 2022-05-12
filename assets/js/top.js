@@ -14,8 +14,9 @@ var app = new Vue({
 
 	/* ==== components ==== */
 	components: {
-		'my-header': httpVueLoader('./assets/components/my-header.vue'),
-		'my-footer': httpVueLoader('./assets/components/my-footer.vue'),
+		'my-header': httpVueLoader('./common/components/my-header.vue'),
+		'my-footer': httpVueLoader('./common/components/my-footer.vue'),
+		'my-slick':  httpVueLoader('./assets/components/my-slick.vue'),
 	},
 
 	/* ==== created ==== */

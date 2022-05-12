@@ -26,6 +26,8 @@
 *************************************** -->
 <script>
 	module.exports = {
+		/* ==== props ==== */
+		// -- リアクティブなデータ
 		data: function(){
 			return {
 				isopen_menu: false,
@@ -37,6 +39,7 @@
 		props: ['pagetitle', 'pageid'],
 
 		/* ==== methods ==== */
+		// -- 関数を登録
 		methods: {
 			menu_open(){
 				if (this.isopen_menu){
@@ -61,7 +64,7 @@
 		top: 0; left: 0;
 		width:100%;
 		box-sizing:border-box;
-		height: 100%;
+		/* height: 100%; */
 	}
 
 	header .header{
