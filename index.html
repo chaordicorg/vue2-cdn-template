@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta charset="utf-8">
+	<title>VUE2-CDN-TEMPLATE</title>
+
+	<!--* font / icon *-->
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" media="screen" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+	<!--* css *-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
+	<link rel="stylesheet" type="text/css" href="./assets/css/top.css" />
+
+	<!--* jquery *-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<!--* vue *-->
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="https://unpkg.com/http-vue-loader"></script> <!-- 単一ファイルコンポーネントのロード -->
+
+</head>
+
+<body>
+<div id="app">
+
+	<my-header :pagetitle="pagetitle" pageid="top"></my-header>
+
+	<main>
+		<!-- <my-youtubes></my-youtubes> -->
+
+		<template v-if="test">
+			<h1>TRUE</h1>
+		</template>
+		<template v-else>
+			<h1>FALSE</h1>
+		</template>
+	</main>
+	
+	<my-footer></my-footer>
+
+</div>
+
+<script src="./assets/js/top.js"></script>
+</body>
+</html>
