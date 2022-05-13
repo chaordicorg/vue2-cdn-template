@@ -7,13 +7,10 @@
 	</footer>
 </template>
 
-
-
-
 <!-- **************************************
 	style
 *************************************** -->
-<style>
+<style scoped>
 	footer{
         position: fixed;
         bottom: 0; left: 0;
@@ -22,7 +19,7 @@
 		color: #fff;
         padding: 10px;
 	}
-	footer h1{
+	h1{
 		font-size: 24px;
 		line-height:100%;
 	}

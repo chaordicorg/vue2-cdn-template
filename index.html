@@ -12,7 +12,7 @@
 
 	<!--* css *-->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
-	<link rel="stylesheet" type="text/css" href="./assets/css/top.css" />
+	<link rel="stylesheet" type="text/css" href="./common/css/common.css" />
 
 	<!--* jquery *-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -25,7 +25,7 @@
 	<!--* vue *-->
 	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
 	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-	<script src="https://unpkg.com/http-vue-loader"></script> <!-- 単一ファイルコンポーネントのロード -->
+	<script src="https://unpkg.com/http-vue-loader"></script>
 
 </head>
 
@@ -33,11 +33,12 @@
 <div id="app">
 
 	<main>
-		<my-slick></my-slick>
+		<!-- my-slick.vue -->	<my-slick :win_width="win_width"></my-slick>
+		<!-- my-movies.vue -->	<my-movies></my-movies>
 	</main>
 	
-	<my-header :pagetitle="pagetitle" pageid="top"></my-header>
-	<my-footer></my-footer>
+	<!-- my-header.vue -->	<my-header :pagetitle="pagetitle" pageid="top"></my-header>
+	<!-- my-footer.vue -->	<my-footer></my-footer>
 
 </div>
 
